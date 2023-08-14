@@ -3,12 +3,13 @@ package com.skilldistillery.cardgame.entities;
 import java.util.Objects;
 
 public class Card {
-	
+
 	private Rank rank;
 	private Suit suit;
-	
-	private Card() {}
-	
+
+	public Card() {
+	}
+
 	public Card(Suit suit, Rank rank) {
 		this.rank = rank;
 		this.suit = suit;
@@ -34,12 +35,11 @@ public class Card {
 	@Override
 	public String toString() {
 		return rank + " of " + suit;
+
 	}
-	
+
 	public int getValue() {
 		return rank.getValue();
 	}
-	
-	
-	
+
 }
